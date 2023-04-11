@@ -1,0 +1,58 @@
+.menu {
+	@apply flex justify-between items-center  animate-fade;
+    li{
+		&:hover{
+			a{
+				color: white;
+			}
+		}
+        @apply p-2 hover:bg-orange   transition-all;
+        border-radius: 4px;
+    }
+	.active{
+		display: block;
+	}
+	border-radius: 4px;
+	li {
+		@apply m-2;
+		a {
+			@apply flex items-center;
+			span{
+				@apply ml-1;
+			}
+		}
+	}
+}
+.item {
+	@apply flex items-center font-normal text-lg;
+ 
+}
+.links {
+	@apply text-gray-700;
+ 
+}
+
+.active {
+	@apply bg-orange p-2;
+    border-radius: 4px;
+	a {
+		color: white;
+	}
+}
+.itemsMenu{
+	@apply flex items-center;
+}
+.buttons{
+	display: flex;
+	align-items: center;
+	font-size: 14px;
+}
+.button{
+	@apply border-2 px-2 py-1 bg-orange text-white rounded hover:bg-red transition-all;
+}
+.logo{
+	display: block;
+	@media (max-width: 992px) {
+		display: none;
+	}
+}

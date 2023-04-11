@@ -1,0 +1,39 @@
+.news{
+    @apply pt-10 pb-10 px-10 bg-white;
+}
+.Newstitle{
+    @apply text-3xl font-bold text-center mb-10;
+}
+.NewsFlex{
+    @apply flex flex-wrap justify-between;
+    @media (max-width: 991px) {
+       justify-content: center;
+    }
+}
+.item{
+    width: calc(100% / 3.3);
+    @apply shadow-2xl p-3 m-3 hover:bg-orange cursor-pointer flex items-center transition-all hover:text-white;
+    &:hover{
+        .date{
+            color: white;
+        }
+    }
+    @media (max-width: 991px) {
+        width: auto;
+    }
+}
+.itemImage{
+    @apply mr-3;
+    @media (max-width: 576px) {
+        display: none;
+    }
+}
+.date{
+    @apply text-orange text-xs; 
+}
+.title{
+    @apply text-base underline mb-3;
+}
+.text{
+    @apply text-sm;
+}

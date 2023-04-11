@@ -1,0 +1,66 @@
+.servisesFLex {
+	@apply flex-wrap flex justify-around;
+}
+.serviceBlock{
+	cursor: pointer;
+}
+.servisesTitle {
+	@apply text-center text-3xl mb-5 font-bold;
+	text-transform: uppercase;
+}
+.servises {
+	@apply px-5  pt-10 pb-10 bg-white;
+}
+.item {
+	cursor: pointer;
+	width: calc(100% / 3.5);
+	@apply bg-white shadow-lg mt-5  border-2 border-gray-300  flex items-center justify-center flex-col p-5 rounded;
+	@media (max-width: 991px) {
+		width: calc(1140px / 3);
+	}
+	@media (max-width: 576px) {
+		width: calc(100%);
+		margin: 20px 10px;
+	}
+}
+.itemImage {
+	@apply w-24 h-24 flex items-center justify-center rounded-full bg-orange mb-3;
+}
+.seeServises {
+	@apply text-center mt-10;
+	.linkButton {
+		@apply inline-block mt-3 bg-orange text-white p-4 rounded hover:bg-red;
+	}
+}
+.detail {
+	max-width: 1140px;
+	margin: auto;
+	padding: 50px 20px;
+	.detailTitle {
+		font-family: 'Montserrat', sans-serif;
+		font-size: 36px;
+		line-height: 1.3;
+		margin-bottom: 60px;
+		position: relative;
+		font-weight: 500;
+		color: #2e2e2e;
+		@media (max-width: 768px) {
+			font-size: 26px;
+			margin-bottom: 40px;
+		}
+	}
+	h1, h2, h3, h4, h5{
+		margin-bottom: 20;
+		font-size: 25px;
+		font-weight: 600;
+		@media (max-width: 768px) {
+			font-size: 18px;
+		}
+	}
+	p{
+		margin: 10px 0;
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
+	}
+}

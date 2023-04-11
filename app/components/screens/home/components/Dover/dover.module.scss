@@ -1,0 +1,22 @@
+.dover {
+	background-image: url('/jpg/bg1.jpg');
+	background-position: 50% bottom;
+	background-repeat: no-repeat;
+	background-color: #f6f6f6;
+	@apply px-5 sm:px-20 py-20;
+}
+.doverTitle {
+	@apply text-center text-3xl mb-5 font-bold;
+}
+.doverFLex {
+	@apply flex-wrap inline-flex justify-around;
+}
+.item{
+	@apply flex bg-white p-5 rounded m-2;
+}
+.itemImage{
+	@apply mr-3;
+}
+.text{
+	@apply text-base;
+}

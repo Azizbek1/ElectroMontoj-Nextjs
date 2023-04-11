@@ -1,0 +1,87 @@
+.portfolio{
+    @apply py-10;
+    background: #f6f6f6;
+}
+.portfolioTitle{
+    @apply  tracking-wide text-center text-3xl mb-5 font-bold;
+}
+.portfolioText{
+    @apply text-center text-lg mb-5;
+}
+.portfolioFLex{
+    @apply flex flex-wrap justify-between p-10;
+    @media (max-width: 992px) {
+        justify-content: space-around;
+    }
+    
+}
+.hr{
+    display: block;
+    max-width: 500px;
+    height: 1px;
+    border: none;
+    @apply bg-gray-300 mx-auto mb-6;
+}
+.item{
+    @apply  m-3 bg-white rounded shadow-md;
+    width: calc(100% / 4.5);
+    cursor: pointer;
+    &:hover .itemBox{
+        transition: 500ms all;
+        @apply bg-orange text-white;
+    }
+    &:hover .itemBox .text{
+        transition: 500ms all;
+        @apply  text-white;
+    }
+    &:hover .hoverOverlay{
+        transform: scale(1);
+    }
+    @media (max-width: 992px) {
+        width: calc(100% / 2.9);
+    }
+    @media (max-width: 768px) {
+        width: calc(100% / 2.2);
+    }
+    @media (max-width: 576px) {
+        width: 100%;
+    }
+}
+.itemBox{
+    @apply p-4 text-center;
+}
+.title{
+    @apply mb-4;
+}
+.text{
+    @apply text-orange;
+}
+.button{
+    @apply flex justify-center;
+    button{
+        @apply bg-orange p-4 rounded text-white hover:bg-red; 
+    }
+}
+.itemImage{
+    position: relative;
+}
+
+.hoverOverlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.455);
+    z-index: 66;
+    transform: scale(0);
+    transition: 500ms all;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.icon{
+    color: white;
+    font-size: 65px;
+}
