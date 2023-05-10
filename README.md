@@ -14,4 +14,4 @@
     <li>styled-components</li>
 </ul>
 
-<a href="https://github.com/KomilovDev96/AdminPanel-ElectroMontaj"> Admin Panel -> GitHub <i>link</i> </a>
+<a href="https://github.com/KomilovDev96/AdminPanel-ElectroMontaj"> Admin Panel ElektroMontaj -> GitHub <i>link</i> </a>
