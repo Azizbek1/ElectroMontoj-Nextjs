@@ -13,3 +13,5 @@
     <li>react-redux</li>
     <li>styled-components</li>
 </ul>
+
+<a href="https://github.com/KomilovDev96/AdminPanel-ElectroMontaj"> Admin Panel -> GitHub <i>link</i> </a>
