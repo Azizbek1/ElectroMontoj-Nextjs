@@ -4,7 +4,7 @@ import styles from "./news.module.scss";
 import { NewsItemsData } from "@/components/fakeData/news/newsData";
 import NewItems from "./NewsItems";
 const News: FC = (props: any) => {
-  const {data} = props?.news
+  const { data } = props?.news
   return (
     <Meta title="Новости" description="">
       <div className={styles.news}>

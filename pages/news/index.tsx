@@ -12,16 +12,16 @@ export default function NewsPage(props: any) {
   );
 }
 export const getStaticProps: GetStaticProps = async () => {
-    try {
-      const { data: news } = await NewsService.getAll();
-      return {
-        props: { news },
-      };
-    } catch (error) {
-      return {
-        props: {
-            news: [],
-        },
-      };
-    }
-  };
+  try {
+    const { data: news } = await NewsService.getAll();
+    return {
+      props: { news },
+    };
+  } catch (error) {
+    return {
+      props: {
+        news: [],
+      },
+    };
+  }
+};
