@@ -1,6 +1,8 @@
+import { ImageProps } from "next/image"
+
 export interface ISliders {
     id: number | string
     title: string
     text: string
-    images: string
+    images: any
 }

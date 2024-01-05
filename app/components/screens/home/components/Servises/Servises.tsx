@@ -1,10 +1,9 @@
-import { FC } from "react";
 import styles from "./servises.module.scss";
 import ServisesItemBlock from "./ServiseItemBlock";
 import { AppLinkTheme, Applink } from "@/components/elements/AppLink/Applink";
 
 const Servises = (props: any) => {
-  const {items} = props
+  const { items } = props
   return (
     <div className={styles.servises}>
       <h2 className={styles.servisesTitle}>Услуги</h2>

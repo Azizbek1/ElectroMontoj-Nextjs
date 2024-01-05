@@ -2,7 +2,6 @@ import HeadProvider from "./HeadProvider/HeadProvider";
 import { Provider } from "react-redux";
 import { FC } from "react";
 import { QueryClient, QueryClientProvider} from "react-query";
-import { ReactQueryDevtools } from "react-query/devtools";
 import Layout from "@/components/layout/Layout";
 import ReduxToastrLib  from 'react-redux-toastr';
 import 'react-redux-toastr/lib/css/react-redux-toastr.min.css'
@@ -21,7 +20,6 @@ const MainProvider: FC = ({ children }) => {
       <QueryClientProvider client={queryClient}>
         <ReduxToastrLib />
         <Layout>{children}</Layout>
-        <ReactQueryDevtools initialIsOpen={false} />
       </QueryClientProvider>
       </Provider>
     

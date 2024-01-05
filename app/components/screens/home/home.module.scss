@@ -1,6 +1,40 @@
-.slider{
+.slider {
     display: block;
+    @apply w-full;
+
     @media (max-width: 380px) {
         display: none;
+    }
+}
+
+.slider {
+    position: relative;
+}
+
+.images {
+    span {
+        width: 100% !important;
+    }
+
+    img {
+        width: 100% !important;
+        height: 600px !important;
+        object-fit: cover;
+    }
+}
+
+.absolyute {
+    position: absolute;
+    width: 100%;
+    top: 40%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    z-index: 22;
+    text-align: center;
+
+    @media (max-width: 450px) {
+        top: 20%;
     }
 }

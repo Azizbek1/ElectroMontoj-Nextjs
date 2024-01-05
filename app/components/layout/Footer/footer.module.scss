@@ -1,28 +1,43 @@
-.footer{
+.footer {
     @apply pb-10 pt-10 bg-gray-700;
 }
-.footerFlex{
+
+.footerFlex {
     @apply px-10 flex justify-between flex-wrap;
 }
-.footerItem{
+
+.footerItem {
     @apply mb-5;
 }
-.footerItem{
+
+.footerItem {
     @apply text-white;
-    h4{
-        @apply text-lg font-bold mb-4; 
+
+    h4 {
+        @apply text-lg font-bold mb-4;
     }
 }
 
-.menuItem{
+.menuItem {
     @apply mb-3;
 }
-.menuLinks{
+
+.menuLinks {
     @apply flex items-center hover:text-orange text-white;
 }
-.icon{
+
+.icon {
     @apply text-orange mr-3;
 }
-.button{
+
+.button {
     @apply bg-orange p-3 hover:bg-red transition-all rounded;
+}
+
+.footerEnd {
+    text-align: center;
+    color: white;
+    &:hover {
+        color: rgb(246 124 9 / var(--tw-bg-opacity));
+    }
 }

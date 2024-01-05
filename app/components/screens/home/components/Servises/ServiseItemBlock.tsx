@@ -3,7 +3,6 @@ import Image from "next/image";
 import { IServises } from "@/components/fakeData/servises/servises.types";
 import Link from "next/link";
 import { getServisesUrl } from "@/configs/url.config";
-import BlockServiseStyle from "./servises.module.scss";
 const ServisesItem = ({ file, title, id }: IServises) => {
   return (
     <Link href={getServisesUrl(String(id))} passHref>

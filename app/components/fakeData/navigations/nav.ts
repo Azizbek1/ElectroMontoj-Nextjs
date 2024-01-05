@@ -16,24 +16,12 @@ export const menus: IMenu = {
         },
         {
             id: 3,
-            icon: 'MdRealEstateAgent',
-            link: '/servises',
-            title: 'Услуги',
-        },
-        {
-            id: 4,
-            icon: 'MdOutlineRepeatOn',
-            link: '/news',
-            title: 'Новости',
-        },
-        {
-            id: 5,
             icon: 'MdLocalFireDepartment',
             link: '/coments',
             title: 'Отзывы',
         },
         {
-            id: 6,
+            id: 4,
             icon: 'MdOutlineLocalPhone',
             link: '/contact',
             title: 'Контакты',
@@ -49,6 +37,6 @@ export const address: IMenuAdress = {
 
 export const addressPhone: IMenuAddrePhone = {
     items: [
-        {id: 1,  icon: "MdOutlineLocalPhone", title: "998 90 999 99 99"}
+        { id: 1, icon: "MdOutlineLocalPhone", title: "998 90 999 99 99" }
     ]
 }

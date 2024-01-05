@@ -7,6 +7,8 @@ import { MaterialIcon } from "@/components/ui/icons/MaterialIcon";
 import { useForm } from "react-hook-form";
 import { ContactService } from "@/services/contact/contact.service";
 import { toastError } from "@/utils/ToastReact/ToastReact";
+import { FaMapMarker } from "react-icons/fa";
+
 const Contact: FC = () => {
   const { register, handleSubmit, reset, formState: { errors } } = useForm<any>();
 
@@ -36,11 +38,11 @@ const Contact: FC = () => {
               <li className={styles.menuItems}>
                 <span className={styles.flexIcon}>
                   <span className={styles.icon}>
-                    <MaterialIcon name="MdCall" />
+                    <FaMapMarker />
                   </span>
                   <span className={styles.rejIco}>Адрес:</span>
                 </span>
-                <p>г. Москва, ул. Калужская, 80, офис 315</p>
+                <p>г. Узбекистон, ул. Калужская, 80, офис 315</p>
               </li>
               <li className={styles.menuItems}>
                 <span className={styles.flexIcon}>
@@ -49,13 +51,13 @@ const Contact: FC = () => {
                   </span>
                   <span className={styles.rejIco}>Телефоны:</span>
                 </span>
-                <p>+998 (90) 999 99 99</p>
-                <p>+998 (90) 999 99 99</p>
+                <p>+998 (90) 985 12 45</p>
+                <p>+998 (90) 995 12 55</p>
               </li>
               <li className={styles.menuItems}>
                 <span className={styles.flexIcon}>
                   <span className={styles.icon}>
-                    <MaterialIcon name="MdCall" />
+                    <MaterialIcon name="MdOutlineSms" />
                   </span>
                   <span className={styles.rejIco}>E-mail:</span>
                 </span>
@@ -64,7 +66,7 @@ const Contact: FC = () => {
               <li className={styles.menuItems}>
                 <span className={styles.flexIcon}>
                   <span className={styles.icon}>
-                    <MaterialIcon name="MdCall" />
+                  <MaterialIcon name="MdAccessTime" />
                   </span>
                   <span className={styles.rejIco}>Режим работы:</span>
                 </span>
@@ -105,7 +107,7 @@ const Contact: FC = () => {
                       type="text"
                       placeholder="Телефон"
                     />
-                     {errors.phone && <span className={styles.inputError}>Минимальный размер телефона 12</span>}
+                    {errors.phone && <span className={styles.inputError}>Минимальный размер телефона 12</span>}
                   </div>
                 </div>
                 <div className={styles.inputText}>

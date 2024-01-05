@@ -1,10 +1,10 @@
+import Image from "next/image";
 import React, { useRef, useState } from "react";
 // Import Swiper React components
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // import required modules
 import { Autoplay, Pagination, Navigation } from "swiper";
-import Image from "next/image";
 
 import styles from "./swiper.module.scss";
 import { Htag } from "@/components/elements/Htag/Htag";
@@ -32,7 +32,7 @@ const SipperSlider = ({ slide }: any) => {
               </div>
               <div className={styles.images}>
                 <Image
-                  src={`${item.url}`}
+                  src={`${item.image}`}
                   alt="jpg"
                   width={1400}
                   height={600}
