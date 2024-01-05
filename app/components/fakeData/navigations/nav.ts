@@ -37,6 +37,6 @@ export const address: IMenuAdress = {
 
 export const addressPhone: IMenuAddrePhone = {
     items: [
-        { id: 1, icon: "MdOutlineLocalPhone", title: "998 90 999 99 99" }
+        { id: 1, icon: "MdOutlineLocalPhone", title: "998 (90) 985 12 45" }
     ]
 }
